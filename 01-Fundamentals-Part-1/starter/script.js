@@ -19,7 +19,7 @@ let PI = 3.1415; //Variable names written in uppercase are for constants that wi
 let myFirstJob = "Programmer";
 let myCurrentJob = "Teacher";
 
-console.log(myFirstJob); */
+console.log(myFirstJob); 
 
 // Data Types
 // Number
@@ -45,4 +45,17 @@ console.log(typeof age);
 age = "Twenty Three";
 console.log(typeof age);
 jobDescription = "Blockchanin Developer";
-console.log(typeof jobDescription);
+console.log(typeof jobDescription); */
+
+// LET, CONST & VAR
+// LET - Used to declare variables that can be changed later
+let age = 23;
+age = 25; // This can be called re-assignment or mutation of the value of a variable
+
+// CONST - Used to decaler values that cannot be changed later
+const birthYear = 2002;
+birthYear = 2003; // This will throw an error because we cannot change the value of a constant variable
+
+// VAR - The old way of declaring a variable before ES6. It is function-scoped and can lead to issues with variable hoisting.
+var job = "Developer";
+job = "Blockchain Developer";
