@@ -45,7 +45,7 @@ console.log(typeof age);
 age = "Twenty Three";
 console.log(typeof age);
 jobDescription = "Blockchanin Developer";
-console.log(typeof jobDescription); */
+console.log(typeof jobDescription); 
 
 // LET, CONST & VAR
 // LET - Used to declare variables that can be changed later
@@ -58,4 +58,18 @@ birthYear = 2003; // This will throw an error because we cannot change the value
 
 // VAR - The old way of declaring a variable before ES6. It is function-scoped and can lead to issues with variable hoisting.
 var job = "Developer";
-job = "Blockchain Developer";
+job = "Blockchain Developer"; */
+
+// JavaScript Operators
+// Mathematical Operators
+const now = 2025;
+const ageManny = now - 2002;
+const ageJohnson = ageManny - 2;
+console.log(ageManny, ageJohnson);
+
+console.log(ageManny * 2, ageJohnson / 7, 2 ** 3);
+// 2 ** 3 means 2 * 2 * 2
+
+const firstName = "Manny";
+const lastName = "Johnson";
+console.log(firstName + " " + lastName);
