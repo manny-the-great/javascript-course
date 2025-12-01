@@ -61,6 +61,7 @@ var job = "Developer";
 job = "Blockchain Developer"; */
 
 // JavaScript Operators
+
 // Mathematical Operators
 const now = 2025;
 const ageManny = now - 2002;
@@ -72,4 +73,19 @@ console.log(ageManny * 2, ageJohnson / 7, 2 ** 3);
 
 const firstName = "Manny";
 const lastName = "Johnson";
-console.log(firstName + " " + lastName);
+console.log(firstName + " " + lastName); // This is called concatenation
+// Typeof Operator has been used earlier in the code
+console.log(typeof(firstName));
+// Asignment Operators
+let x = 20 + 5; // 25
+x += 25 // x = x + 25 = 50
+x *= 2 // x = x * 2 = 100
+x++; // x = x + 1 = 101
+x--; // x = x - 1 = 100
+console.log(x);
+
+// Comparison Operators
+console.log(ageManny > ageJohnson); // >, <, >=, <=
+console.log(ageJohnson >= 18);
+
+console.log(now - 2002 > now - 2004);
