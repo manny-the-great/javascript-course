@@ -65,7 +65,8 @@ job = "Blockchain Developer"; */
 // Mathematical Operators
 const now = 2025;
 const ageManny = now - 2002;
-const ageJohnson = ageManny - 2;
+const ageJohnson = ageMa
+nny - 2;
 console.log(ageManny, ageJohnson);
 
 console.log(ageManny * 2, ageJohnson / 7, 2 ** 3);
