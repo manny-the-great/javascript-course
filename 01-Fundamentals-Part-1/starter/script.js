@@ -58,7 +58,7 @@ birthYear = 2003; // This will throw an error because we cannot change the value
 
 // VAR - The old way of declaring a variable before ES6. It is function-scoped and can lead to issues with variable hoisting.
 var job = "Developer";
-job = "Blockchain Developer"; */
+job = "Blockchain Developer"; 
 
 // JavaScript Operators
 
@@ -89,4 +89,21 @@ console.log(x);
 console.log(ageManny > ageJohnson); // >, <, >=, <=
 console.log(ageJohnson >= 18);
 
-console.log(now - 2002 > now - 2004);
+console.log(now - 2002 > now - 2004); */
+
+// Operators Precedence
+const now = 2025;
+const ageManny = now - 2002;
+const ageJohnson = now - 2004;
+
+console.log(now - 2002 > now - 2004); // Most comparison operators uses the left-to-right method
+// MDN is a good resource to check Operators Precedence
+// Most math operators uses the left-to-right method except for the exponentiation operator which uses the right-to-left method
+console.log(25 - 10 - 5); // Left-to-right
+console.log(2 ** 3 ** 2); // Right-to-left = 2 ** 9 = 512
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10
+console.log(x, y);
+//  The operator with the highest precedence is the grouping operator ( ) which can be used to change the order of operations
+const averageAge = (ageManny + ageJohnson) / 2;
+console.log(ageManny, ageJohnson, averageAge);
