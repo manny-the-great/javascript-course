@@ -107,3 +107,46 @@ console.log(x, y);
 //  The operator with the highest precedence is the grouping operator ( ) which can be used to change the order of operations
 const averageAge = (ageManny + ageJohnson) / 2;
 console.log(ageManny, ageJohnson, averageAge);
+
+// Coding Challenge
+let weightMark_1 = 78;
+let heightMark_1 = 1.69;
+
+let weightMark_2 = 98;
+let heightMark_2 = 1.88;
+
+
+let weightJohn_1 = 92;
+let heightJohn_1 = 1.95;
+
+let weightJohn_2 = 85;
+let heightJohn_2 = 1.76;
+
+const BMI_Mark_1 = weightMark_1 / (heightMark_1 ** 2);
+console.log(BMI_Mark_1)
+
+const BMI_Mark_2 = weightMark_2 / (heightMark_2 ** 2);
+console.log(BMI_Mark_2 )
+
+const BMI_John_1 = weightJohn_1 / (heightJohn_1 ** 2);
+console.log(BMI_John_1 );
+
+const BMI_John_2 = weightJohn_2 / (heightJohn_2 ** 2);
+console.log(BMI_John_2);
+
+if (BMI_Mark_1 > BMI_John_1) {
+    console.log("Mark has a higher BIM in the first round");
+} else if (BMI_John_1 > BMI_Mark_1) {
+    console.log("John has a higher BMI than Mark in the first round");
+} else {
+    console.log("They are equal");
+};
+
+
+if (BMI_Mark_2 > BMI_John_2) {
+    console.log("Mark has a higher BIM in the second round");
+} else if (BMI_John_2 > BMI_Mark_2) {
+    console.log("John has a higher BMI than Mark in the second round");
+} else {
+    console.log("They are equal");
+};
