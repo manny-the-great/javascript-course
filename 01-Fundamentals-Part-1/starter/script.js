@@ -89,7 +89,7 @@ console.log(x);
 console.log(ageManny > ageJohnson); // >, <, >=, <=
 console.log(ageJohnson >= 18);
 
-console.log(now - 2002 > now - 2004); */
+console.log(now - 2002 > now - 2004); 
 
 // Operators Precedence
 const now = 2025;
@@ -136,7 +136,7 @@ console.log("John's second BMI:", BMI_John_2);
 
 
 
-// IF-ELSE STATEMENT
+// IF-ELSE STATEMENT for the FIRST CHALLENGE
 if (BMI_Mark_1 > BMI_John_1) {
     console.log("Mark has a higher BIM in the first round");
 } else if (BMI_John_1 > BMI_Mark_1) {
@@ -152,4 +152,38 @@ if (BMI_Mark_2 > BMI_John_2) {
     console.log("John has a higher BMI than Mark in the second round");
 } else {
     console.log("They are equal");
-};
+}; 
+
+//STRINGS & TEMPLATE LITERALS
+
+const firstName = "Manny";
+const job = "Blockchain Developer";
+const birthYear = 2002;
+const currentYear = 2025
+
+const manny = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' years old ' + job + '!';
+console.log(manny);
+// The above method is quite stressfull in writing strings but in ES-6, there's a better way to write strings and it's called TEMPLATE LITERALS
+// To use the Template Literals, the whole string is always written in backticks and variable names are written inside ${}... even for expressions
+const mannyNew = `I'm ${firstName}, a ${ currentYear - birthYear} years old ${job}!`; // This is Template Literal feature in ES-6
+console.log(mannyNew);
+
+console.log(`Just testing the use of backticks`);
+console.log('String with \n\
+new \n\
+lines'); // Old method of writing
+
+console.log(`Multi-line
+with
+backticks`) */
+
+// Taking Decisions: If / Else Statements
+
+const age = 15;
+
+if(age >= 18) {
+    console.log(`Manny can start driving 👌`);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Manny is not old enough to start driving and needs ${yearsLeft} year(s) to start driving 👍`)
+}
