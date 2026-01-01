@@ -227,12 +227,12 @@ if (BMI_Mark_2 > BMI_John_2) {
     console.log(`Mark has a higher BMI of ${BMI_Mark_2 - BMI_John_2} than John`);
 } else {
     console.log(`John has a higher BMI of ${BMI_John_2 - BMI_Mark_2} than Mark`);
-} */
+} 
 
 
 // Type Conversion and Coercion
-/* Type Conversion = When we manually convert from one type to another
-   Type Coercion is when JS automatically does the conversion behind the scenes*/
+// Type Conversion = When we manually convert from one type to another
+// Type Coercion is when JS automatically does the conversion behind the scenes
 
 // TYPE CONVERSION
 const inputYear = '1991'; // The number "1991" here is a string
@@ -246,9 +246,35 @@ console.log(String(1234), 1234); // The first is a string, and the second is a n
 // TYPE COERCION : This happens when an operator is dealing with two values that have different types, JS automatically converts one of the values to match the other so the operation can be executed
 console.log("I am " + 23 + " years old"); // The + operator coverted the number to a string and that's JS working behind the scenes
 console.log("23" - "10" - 3); // With the - operator, strings are converted to numbers
-console.log("23" * "2");
-console.log("46" / "2");
+console.log("23" * "2"); // 
+console.log("46" / "2"); // 
 
 let n = "1" + 1;
 n = n -1 ;
-console.log(n);
+console.log(n); */
+
+// TRUTHY and FALSY values
+
+// Falsy values in JS are: 0, ""(empty string), undefined, null, NaN : These values are not false initially but becomes false when converted to a boolean
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Manny"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 200;
+if (money) {
+    console.log("Don't spend it all");
+} else {
+    console.log("You should get a job");
+}
+console.log(typeof(money)); // money is considered a number
+
+let height = 156;
+if (height) {
+    console.log("Yay! Height is defined");
+} else {
+    console.log("Heigth is UNDEFINED");
+}
+
+// Making decisions with EQUALITY Operators
