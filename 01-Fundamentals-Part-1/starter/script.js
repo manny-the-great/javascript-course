@@ -251,7 +251,7 @@ console.log("46" / "2"); //
 
 let n = "1" + 1;
 n = n -1 ;
-console.log(n); */
+console.log(n); 
 
 // TRUTHY and FALSY values
 
@@ -275,6 +275,19 @@ if (height) {
     console.log("Yay! Height is defined");
 } else {
     console.log("Heigth is UNDEFINED");
-}
+} */
 
 // Making decisions with EQUALITY Operators
+
+const age = 18;
+if (age === 18) console.log("You are now an adult");
+// The tripple equal sign is used to say that the age is exactly equal to 18
+// The single equal sign is just an assignment operator. Used to assign a value to something
+
+// === : The strict equality operator: will only return true if both values are exactly the same. NO TYPE COERCION
+18 === 18 // This will return true
+18 === '18' // This will return false
+// = : The assignment operator : Used to assign a value to something, mostly a variable
+const newAge = 23;
+// == : The loose equality operator: This does TYPE COERCION
+'18' == 18 // This will return true
