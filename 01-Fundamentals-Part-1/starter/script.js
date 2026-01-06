@@ -291,3 +291,23 @@ if (age === 18) console.log("You are now an adult");
 const newAge = 23;
 // == : The loose equality operator: This does TYPE COERCION
 '18' == 18 // This will return true
+
+// The prompt function
+const favourite = prompt("What's your favourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+    console.log("Cool! 23 is an amazing number by type coercion"); 
+} else if (favourite === 7) {
+    console.log("7 is a cool number");
+} else if (favourite == 9) {
+    console.log("9 is a cool number");
+} else {
+    console.log("Number is not 23 or 7");
+}
+
+// The negation to equality operator
+if (favourite !== 23) {
+    console.log("Why not 23");
+}
