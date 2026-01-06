@@ -275,7 +275,7 @@ if (height) {
     console.log("Yay! Height is defined");
 } else {
     console.log("Heigth is UNDEFINED");
-} */
+} 
 
 // Making decisions with EQUALITY Operators
 
@@ -310,4 +310,10 @@ if (favourite === 23) {
 // The negation to equality operator
 if (favourite !== 23) {
     console.log("Why not 23");
-}
+} */
+
+// Boolean Logic: The AND, OR & NOT operators
+// The AND operator returns true if both conditions are true
+// The OR operator returns true if at least one of the conditions are true
+// The NOT operator is a negation to a condition or outcome
+
