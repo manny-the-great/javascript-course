@@ -310,10 +310,34 @@ if (favourite === 23) {
 // The negation to equality operator
 if (favourite !== 23) {
     console.log("Why not 23");
-} */
+} 
 
 // Boolean Logic: The AND, OR & NOT operators
-// The AND operator returns true if both conditions are true
+// The AND operator returns true if all conditions are true
 // The OR operator returns true if at least one of the conditions are true
 // The NOT operator is a negation to a condition or outcome
+*/
 
+// Logical Operator
+const hasDriversLicense = true; // A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log("Let Sarah drive");
+// } else {
+//     console.log("Let someone else drive");
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense || hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah will be able to drive");
+} else {
+    console.log("Let someone else drive");
+}
