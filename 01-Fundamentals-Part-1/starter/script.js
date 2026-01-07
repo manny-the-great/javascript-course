@@ -343,3 +343,22 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } */
 
 // Coding Challege #3
+const teamDolphinScore1 = (96 + 108 + 89) / 3;
+const teamKoalaScore1 = (88 + 91 + 110) / 3;
+
+
+const teamDolphinScore2 = (97 + 112 + 101) / 3;
+const teamKoalaScore2 = (109 + 95 + 123) / 3;
+const teamKoalaScore3 = (109 + 95 + 106) / 3;
+
+console.log(teamDolphinScore1, teamKoalaScore1, teamDolphinScore2, teamKoalaScore2, teamKoalaScore3);
+
+if (teamDolphinScore1 > teamKoalaScore1 && teamDolphinScore1 >= 100) {
+    console.log("Dolphin team wins the first round");
+} else if (teamKoalaScore1 > teamDolphinScore1 && teamKoalaScore1 >= 100) {
+    console.log("Koala team wins the first round");
+} else if (teamDolphinScore1 === teamKoalaScore1 && teamDolphinScore1 >= 100 && teamKoalaScore1 >= 100) {
+    console.log("Both teams draw in the first round");
+} else {
+    console.log("No team wins the first round");
+}
