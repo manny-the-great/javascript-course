@@ -400,22 +400,27 @@ if (day === 'Monday') {
     console.log("Go to church");
 } else {
     console.log("Not a valid day")
-} */
+} 
 
 // Statements and Expressions
 
 // Expressions: A piece of code that produces a value
-3 + 4 // An expression because it produces 7 as the value
-1991
-true && false && !false // Also an expression
+// 3 + 4 // An expression because it produces 7 as the value
+// 1991
+// true && false && !false // Also an expression
 
-// Statements: A bigger piece of code that is executed but does not produce a value on its own
-if (23 > 10) {
-    const str = '23 is bigger'; // This is an expression inside a statement. The value it produces is "23 is bigger"
-} // The whole if statement is a STATEMENT as it doesn't produce a value
+// // Statements: A bigger piece of code that is executed but does not produce a value on its own
+// if (23 > 10) {
+//     const str = '23 is bigger'; // This is an expression inside a statement. The value it produces is "23 is bigger"
+// } // The whole if statement is a STATEMENT as it doesn't produce a value
 
-// Template Literals uses expressions, not statements
-const me = "Manny"
-console.log(`${me} is ${20 + 3} years old`);
+// // Template Literals uses expressions, not statements
+// const me = "Manny"
+// console.log(`${me} is ${20 + 3} years old`); 
+// */
 
-
+// WAYS OF WRITING CONDITIONAL STATEMENTS: - IF/ESLE STATEMENT - SWITCH STATEMENT - THE CONDITIONAL (TERNARY) OPERATOR
+// The Conditional Operator: A similar way of writing the if/esle statement, all in one line
+const age = 23;
+// The code beow says if age variable is greater or equal to 18, log to the console that I'd like to drink wine. Else, log to the console that I'd like to drink water instead
+age >= 18 ?  console.log("I would like to drink wine") :console.log("I would drink water instead");
