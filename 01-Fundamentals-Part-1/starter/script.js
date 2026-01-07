@@ -361,7 +361,7 @@ if (teamDolphinScore1 > teamKoalaScore1 && teamDolphinScore1 >= 100) {
     console.log("Both teams draw in the first round");
 } else {
     console.log("No team wins the first round");
-} */
+} 
 
 // The Switch Statement: The alternative way of writing a complicated if-else statement
 const day = 'Thursday';
@@ -400,4 +400,22 @@ if (day === 'Monday') {
     console.log("Go to church");
 } else {
     console.log("Not a valid day")
-}
+} */
+
+// Statements and Expressions
+
+// Expressions: A piece of code that produces a value
+3 + 4 // An expression because it produces 7 as the value
+1991
+true && false && !false // Also an expression
+
+// Statements: A bigger piece of code that is executed but does not produce a value on its own
+if (23 > 10) {
+    const str = '23 is bigger'; // This is an expression inside a statement. The value it produces is "23 is bigger"
+} // The whole if statement is a STATEMENT as it doesn't produce a value
+
+// Template Literals uses expressions, not statements
+const me = "Manny"
+console.log(`${me} is ${20 + 3} years old`);
+
+
