@@ -364,29 +364,29 @@ if (teamDolphinScore1 > teamKoalaScore1 && teamDolphinScore1 >= 100) {
 } */
 
 // The Switch Statement: The alternative way of writing a complicated if-else statement
-// const day = 'Thursday';
+const day = 'Thursday';
 
-// switch (day)  { // The switch statement is saying if day === 'Monday', log to the console the output for Monday else if day is Tuedsay... till it gets to the end
-//     case 'Monday': // if day === 'Monday'
-//         console.log("Plan to read my notes");
-//         console.log("Take a break when tired");
-//         break; // Used to stop executing the code for Monday
-//     case 'Tuesday': // if day === 'Tuesday'
-//         console.log("Take an exam");
-//         break;
-//     case 'Wednesday':
-//     case 'Thursday': // The same output will be logged for Wednesday and Thursday
-//         console.log("Learn Blockchain Development");
-//         break;
-//     case 'Friday':
-//     case 'Saturday':
-//         console.log("Write more codes");
-//         break
-//     case 'Sunday':
-//         console.log("Go to church");
-//     default: // This will be executed when other cases fails
-//         console.log("Not a valid day!");
-// }
+switch (day)  { // The switch statement is saying if day === 'Monday', log to the console the output for Monday else if day is Tuedsay... till it gets to the end
+    case 'Monday': // if day === 'Monday'
+        console.log("Plan to read my notes");
+        console.log("Take a break when tired");
+        break; // Used to stop executing the code for Monday
+    case 'Tuesday': // if day === 'Tuesday'
+        console.log("Take an exam");
+        break;
+    case 'Wednesday':
+    case 'Thursday': // The same output will be logged for Wednesday and Thursday
+        console.log("Learn Blockchain Development");
+        break;
+    case 'Friday':
+    case 'Saturday':
+        console.log("Write more codes");
+        break
+    case 'Sunday':
+        console.log("Go to church");
+    default: // This will be executed when other cases fails
+        console.log("Not a valid day!");
+}
 
 if (day === 'Monday') {
     console.log("Plan to read my notes");
