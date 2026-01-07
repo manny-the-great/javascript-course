@@ -316,7 +316,7 @@ if (favourite !== 23) {
 // The AND operator returns true if all conditions are true
 // The OR operator returns true if at least one of the conditions are true
 // The NOT operator is a negation to a condition or outcome
-*/
+
 
 // Logical Operator
 const hasDriversLicense = true; // A
@@ -340,4 +340,6 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
     console.log("Sarah will be able to drive");
 } else {
     console.log("Let someone else drive");
-}
+} */
+
+// Coding Challege #3
