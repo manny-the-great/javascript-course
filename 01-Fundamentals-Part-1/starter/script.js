@@ -420,7 +420,19 @@ if (day === 'Monday') {
 // */
 
 // WAYS OF WRITING CONDITIONAL STATEMENTS: - IF/ESLE STATEMENT - SWITCH STATEMENT - THE CONDITIONAL (TERNARY) OPERATOR
-// The Conditional Operator: A similar way of writing the if/esle statement, all in one line
-const age = 23;
+// The Conditional Operator (Ternary): A similar way of writing the if/esle statement, all in one line
+// ====== Code Example ======
+const age = 15;
 // The code beow says if age variable is greater or equal to 18, log to the console that I'd like to drink wine. Else, log to the console that I'd like to drink water instead
-age >= 18 ?  console.log("I would like to drink wine") :console.log("I would drink water instead");
+//age >= 18 ?  console.log("I would like to drink wine") :console.log("I would drink water instead");
+const drink = age >= 18 ? "Wine 🍷" : "Water 💧";
+console.log(drink);
+let drink2;
+if (age >= 18) {
+    drink2 = "Wine 🍷";
+} else {
+    drink2 = "Water 💧";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "Wine 🍷" : "Water 💧"}`);
