@@ -417,7 +417,7 @@ if (day === 'Monday') {
 // // Template Literals uses expressions, not statements
 // const me = "Manny"
 // console.log(`${me} is ${20 + 3} years old`); 
-// */
+// 
 
 // WAYS OF WRITING CONDITIONAL STATEMENTS: - IF/ESLE STATEMENT - SWITCH STATEMENT - THE CONDITIONAL (TERNARY) OPERATOR
 // The Conditional Operator (Ternary): A similar way of writing the if/esle statement, all in one line
@@ -435,4 +435,9 @@ if (age >= 18) {
 }
 console.log(drink2);
 
-console.log(`I like to drink ${age >= 18 ? "Wine 🍷" : "Water 💧"}`);
+console.log(`I like to drink ${age >= 18 ? "Wine 🍷" : "Water 💧"}`); */
+
+// ======== CODING CHALLENGE #4 ========
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}`);
