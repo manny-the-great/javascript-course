@@ -435,9 +435,24 @@ if (age >= 18) {
 }
 console.log(drink2);
 
-console.log(`I like to drink ${age >= 18 ? "Wine 🍷" : "Water 💧"}`); */
+console.log(`I like to drink ${age >= 18 ? "Wine 🍷" : "Water 💧"}`); 
 
 // ======== CODING CHALLENGE #4 ========
 const bill = 275;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}`);
+*/
+
+
+// ==== JavaScript Releases ====
+//In 1995, Brendan Eich was hired by Netscape Navigator to build JS in 10 days, and was called Mocaha
+//In 1996, Mocha was renamed to LiveScript which was later renamed to JavaScript, but not related to Java
+//In 1996, Microspft launched Internet Explorer which copied JS from Netscape and called it Jscript
+//In 1997, ECMA released the ECMAScript1, which was the first official standard language for JS
+//In 2009, ES5 was realeased
+//in 2015, ES6 was released with the biggest update to ever happen in JS
+//In 2016, ES7/ ES2016 was released...
+
+// JS supports backwards compartibility, which means it can still support the old versions of the language without any hazzle.
+//Only new features were added, the existing modifications weren't erased
+//Babel is used for TRANSPILING or POLIFILLING...This is the process of converting the new release of JS back to ES5 for old browsers to be able to support the feature. This is also possible because the browser supports backwards compatibility
