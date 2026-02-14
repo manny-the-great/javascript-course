@@ -17,29 +17,38 @@ let $functionCode = 27;
 let PI = 3.1415; //Variable names written in uppercase are for constants that will never change
 
 let myFirstJob = "Programmer";
-let myCurrentJob = "Teacher";
+let myCurrentJob = "Leaner";
 
-console.log(myFirstJob); 
+console.log(myFirstJob);
+console.log(myCurrentJob);
 
 // Data Types
-// Number
+
+// NUMBER
 let age = 23;
-// Strings
+
+// STRINGS
 let fullName = "Manny Johnson";
-//Boolean = A true or false value
+
+//BOOLEAN = A true or false value
 let isActive = true;
 console.log(isActive);
-// Undefined = An empty value that is not defined
+
+// UNDEFINED = A variable declared without a value
 let jobDescription;
-console.log(typeof jobDescription);
-// Null
+console.log(typeof jobDescription); //Prints "undefined"
+
+// NULL
 console.log(typeof null); // This is a bug in JavaScript, it should return 'object' 
+
 // Symbol (ES2015)
+
 //BigInt (ES2020)
+
 // Typeof Operator - Used to check the data type of a variable
-console.log(typeof isActive);
-console.log(typeof fullName);
-console.log(typeof age);
+console.log(typeof isActive); // Should return "boolean"
+console.log(typeof fullName); // Should return "string"
+console.log(typeof age); // Should return "number/integer"
 
 // Dynamic Typing - The ability of a programming language to change data types of a variable at runtime
 age = "Twenty Three";
@@ -48,11 +57,12 @@ jobDescription = "Blockchanin Developer";
 console.log(typeof jobDescription); 
 
 // VARIABLE DECLARATION: LET, CONST & VAR
+
 // LET - Used to declare variables that can be changed later
 let age = 23;
 age = 25; // This can be called re-assignment or mutation of the value of a variable
 
-// CONST - Used to decaler values that cannot be changed later
+// CONST - Used to declare values that cannot be changed later
 const birthYear = 2002;
 birthYear = 2003; // This will throw an error because we cannot change the value of a constant variable
 
@@ -63,10 +73,9 @@ job = "Blockchain Developer";
 // JavaScript Operators
 
 // Mathematical Operators
-const now = 2025;
+const now = 2026;
 const ageManny = now - 2002;
-const ageJohnson = ageMa
-nny - 2;
+const ageJohnson = ageManny - 10;
 console.log(ageManny, ageJohnson);
 
 console.log(ageManny * 2, ageJohnson / 7, 2 ** 3);
@@ -74,9 +83,11 @@ console.log(ageManny * 2, ageJohnson / 7, 2 ** 3);
 
 const firstName = "Manny";
 const lastName = "Johnson";
-console.log(firstName + " " + lastName); // This is called concatenation
+console.log(firstName + " " + lastName); // Prints "Manny Johnson" // This is called concatenation
+
 // Typeof Operator has been used earlier in the code
 console.log(typeof(firstName));
+
 // Asignment Operators
 let x = 20 + 5; // 25
 x += 25 // x = x + 25 = 50
@@ -85,10 +96,9 @@ x++; // x = x + 1 = 101
 x--; // x = x - 1 = 100
 console.log(x);
 
-// Comparison Operators
-console.log(ageManny > ageJohnson); // >, <, >=, <=
+// Comparison Operators // >, <, >=, <=
+console.log(ageManny > ageJohnson); // Should return "true"
 console.log(ageJohnson >= 18);
-
 console.log(now - 2002 > now - 2004); 
 
 // Operators Precedence
@@ -98,17 +108,19 @@ const ageJohnson = now - 2004;
 
 console.log(now - 2002 > now - 2004); // Most comparison operators uses the left-to-right method
 // MDN is a good resource to check Operators Precedence
-// Most math operators uses the left-to-right method except for the exponentiation operator which uses the right-to-left method
+// Most math operators uses the left-to-right method except for the exponential operator which uses the right-to-left method
 console.log(25 - 10 - 5); // Left-to-right
 console.log(2 ** 3 ** 2); // Right-to-left = 2 ** 9 = 512
+
 let x, y;
 x = y = 25 - 10 - 5; // x = y = 10
-console.log(x, y);
+console.log(x, y); // Prints "10, 10"
+
 //  The operator with the highest precedence is the grouping operator ( ) which can be used to change the order of operations
 const averageAge = (ageManny + ageJohnson) / 2;
 console.log(ageManny, ageJohnson, averageAge);
 
-// Coding Challenge #1
+// CODING CHALLENGE #1
 let weightMark_1 = 78;
 let heightMark_1 = 1.69;
 
@@ -137,6 +149,7 @@ console.log("John's second BMI:", BMI_John_2);
 
 
 // IF-ELSE STATEMENT for the FIRST CHALLENGE
+
 if (BMI_Mark_1 > BMI_John_1) {
     console.log("Mark has a higher BIM in the first round");
 } else if (BMI_John_1 > BMI_Mark_1) {
@@ -154,6 +167,7 @@ if (BMI_Mark_2 > BMI_John_2) {
     console.log("They are equal");
 }; 
 
+
 //STRINGS & TEMPLATE LITERALS
 
 const firstName = "Manny";
@@ -165,17 +179,19 @@ const manny = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' years 
 console.log(manny);
 // The above method is quite stressfull in writing strings but in ES-6, there's a better way to write strings and it's called TEMPLATE LITERALS
 // To use the Template Literals, the whole string is always written in backticks and variable names are written inside ${}... even for expressions
+
 const mannyNew = `I'm ${firstName}, a ${ currentYear - birthYear} years old ${job}!`; // This is Template Literal feature in ES-6
 console.log(mannyNew);
 
-console.log(`Just testing the use of backticks`);
+console.log(`Just testing the use of backticks for template literals`);
 console.log('String with \n\
 new \n\
 lines'); // Old method of writing
 
 console.log(`Multi-line
 with
-backticks`) 
+backticks`) // New method using template literals
+
 
 // Taking Decisions: If / Else Statements
 
